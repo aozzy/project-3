@@ -22,7 +22,7 @@ export default function Login({ history }) {
       if (localStorage) {
         localStorage.setItem('token', data.token)
       }
-      history.push('/cityscapes/discover')
+      history.push('/')
     } catch (err) {
       console.log(err.response.data)
       
