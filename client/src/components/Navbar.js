@@ -18,7 +18,7 @@ const NavBar = ({ history }) => {
         <img className="navbar-logo" src="https://res.cloudinary.com/dznpk39i0/image/upload/v1614268790/rtdxyxqfxywcygegrrzj.png"/>
         <div className="navbar-item">
           <div className="buttons">
-            <Link to="/project-3" className="button">
+            <Link to="/" className="button">
               Home
             </Link>
             <Link to='/project-3/cityscapes/discover' className="button">
