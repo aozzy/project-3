@@ -2,7 +2,7 @@ import { Link, withRouter } from 'react-router-dom'
 import React from 'react'
 import { getLoggedInUserId } from '../lib/auth'
 //import axios from 'axios'
-const NavBar = ({ history }) => {
+ const NavBar = ({ history }) => {
   function handleLogout() {
     localStorage.removeItem('token')
     history.push('/')
@@ -47,3 +47,6 @@ const NavBar = ({ history }) => {
     </div>
   </nav>
 }
+
+
+export default NavBar
