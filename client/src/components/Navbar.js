@@ -11,7 +11,7 @@ import { getLoggedInUserId } from '../lib/auth'
   return <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="navbar-menu is-active">
       <div className="navbar-start">
-        <img className="navbar-logo" src="https://res.cloudinary.com/dznpk39i0/image/upload/v1614268790/rtdxyxqfxywcygegrrzj.png"/>
+        {/* <img className="navbar-logo" src="https://res.cloudinary.com/dznpk39i0/image/upload/v1614268790/rtdxyxqfxywcygegrrzj.png"/> */}
         <div className="navbar-item">
           <div className="buttons">
             <Link to="/" className="button">
