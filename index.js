@@ -10,7 +10,7 @@ import connectToDb from './lib/connectToDb.js'
 import errorHandler from './middleware/errorHandler.js'
 // import { secret } from  './config/environment.js'
 
-import { port } from './config/environment.js'
+import { PORT } from './config/environment.js'
 import dotenv from 'dotenv'
 dotenv.config()
 const app = express()
@@ -40,7 +40,7 @@ async function startServer() {
     res.sendFile(path.join(dist, 'index.html'))
   })
 
-  app.listen(port, () => console.log(`🏙  Up and running on port ${port} `))
+  app.listen(PORT, () => console.log(`🏙  Up and running on port ${PORT} `))
 
 
 

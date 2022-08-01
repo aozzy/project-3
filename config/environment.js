@@ -18,6 +18,6 @@ export const dbURI = env === 'production'
 
   : `mongodb://localhost/citydb-${env}`
 
-export const port = process.env.PORT || 8000
+export const PORT = process.env.PORT || 8000
 
 export const secret = process.env.SECRET

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactMapGL, { Marker, Popup } from 'react-map-gl'
 import axios from 'axios'
 import ClipLoader from 'react-spinners/ClipLoader'
-
+import dataC19 from './data.json'
 
 export default function Map() {
 
@@ -18,23 +18,29 @@ export default function Map() {
     zoom: 3.5
 
   })
+  // useEffect(() => {
+  //   async function getCities() {
+  //     try {
+  //       const { data } = await axios.get('https://www.trackcorona.live/api/countries')
+        
+  //       updateCities(data.data)
+
+  //       updateLoading(false)
+        
+  //     } catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
+  //   getCities()
+  // }, [])
+
   useEffect(() => {
-    async function getCities() {
-      try {
-        const { data } = await axios.get('https://www.trackcorona.live/api/countries')
-        
-        updateCities(data.data)
-
-        updateLoading(false)
-        
-      } catch (err) {
-        console.log(err)
-      }
-    }
-    getCities()
+    
+    const { data } = dataC19
+    
+    updateCities(data)
+    updateLoading(false)
   }, [])
-
-
 
   if (loading) {
     return <ClipLoader loading={loading} size={100} />
@@ -54,7 +60,7 @@ export default function Map() {
 
       {cities.map(city => (
         <Marker
-          key={city._id}
+          key={city.location}
           latitude={city.latitude}
           longitude={city.longitude}
           
