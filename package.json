@@ -7,7 +7,7 @@
   "scripts": {
     "test": "mocha __tests__/*_test.js --require __tests__/helper.js --recursive --exit",
     "seed": "node db/seed.js",
-    "start": "npx node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
