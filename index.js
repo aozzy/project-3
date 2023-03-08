@@ -40,19 +40,19 @@ async function startServer() {
     res.sendFile(path.join(dist, 'index.html'))
   })
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  app.listen(PORT, () => console.log(`🏙  Up and running on port ${PORT} `))
+
+
+
+
+
+
+
+
+
+
 }
 
 startServer()
-app.listen(PORT, () => console.log(`🏙  Up and running on port ${PORT} `))
 
 export default app
