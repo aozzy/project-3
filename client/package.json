@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p --env.NODE_ENV=production",
     "serve": "webpack-dev-server --mode=development --env.NODE_ENV=local"
@@ -34,6 +35,7 @@
     "react-favicon": "^0.0.18",
     "react-map-gl": "^6.1.9",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
     "react-select": "^4.1.0",
     "react-slick": "^0.28.0",
     "react-spinners": "^0.10.6",

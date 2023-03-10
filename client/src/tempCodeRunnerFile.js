@@ -1,1 +1,0 @@
-import testRestaurants from './components/testRestaurants'
