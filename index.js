@@ -33,7 +33,8 @@ async function startServer() {
   app.get('*', function (req, res) {
     res.sendFile(path.join(dist, 'index.html'))
   })
-  // console.log(path.join(__dirname))  
+  // console.log(path.join(__dirname)) 
+  console.log('connected :)')
 
   app.listen(PORT, () => console.log(`🏙  Up and running on port ${PORT} `))
 }
