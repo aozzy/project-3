@@ -10,7 +10,7 @@
 For my third project at General Assembly's Software Engineering Immersive cousre my
 classmates  [Benjamin Shamash](https://github.com/shammyb), [Eva Novotna](https://github.com/novoeva) and [Natasha Alderson](https://github.com/nalderson) and I built Cityscapes.
 
-The app has been deployed on Heroku and you can find it [here](https://project-cityscapes.herokuapp.com/)
+The app has been deployed on Heroku and you can find it [here](https://project-3-api.onrender.com)
 
 ## Brief 
 
